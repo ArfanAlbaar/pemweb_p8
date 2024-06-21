@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+      }
+      table {
+        width: 100%;
+      }
+      td {
+        padding: 10px;
+      }
+      input[type="text"],
+      input[type="date"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      input[type="reset"] {
+        background-color: #f44336;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Free Registration</h1>
+      <table>
+        <tr>
+          <td>Nama:</td>
+          <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+          <td>Tgl Lahir:</td>
+          <td><input type="date" name="tgl_lahir" /></td>
+        </tr>
+        <tr>
+          <td>Alamat:</td>
+          <td><input type="text" name="alamat" /></td>
+        </tr>
+        <tr>
+          <td>Kota:</td>
+          <td><input type="text" name="kota" /></td>
+        </tr>
+        <tr>
+          <td>Pekerjaan:</td>
+          <td>
+            <select name="pekerjaan">
+              <option value="tani">tani</option>
+              <option value="guru">guru</option>
+              <option value="tentara">tentara</option>
+              <option value="bidan">bidan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin:</td>
+          <td>
+            <input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki
+            <input type="radio" name="gender" value="Perempuan" /> Perempuan
+          </td>
+        </tr>
+        <tr>
+          <td>Hobby:</td>
+          <td>
+            <input type="checkbox" name="hobby" value="Reading" /> Reading
+            <input type="checkbox" name="hobby" value="Sport" /> Sport
+            <input type="checkbox" name="hobby" value="Singing" /> Singing
+            <input type="checkbox" name="hobby" value="Traveling" /> Traveling
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Kirim" /></td>
+          <td colspan="2"><input type="reset" value="Cancel" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
